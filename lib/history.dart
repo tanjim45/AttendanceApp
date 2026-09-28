@@ -47,7 +47,7 @@ class HistoryScreen extends StatelessWidget {
               final record = records[index];
               final parsedDate = DateTime.tryParse(record.date);
               final displayDate = parsedDate != null
-                  ? DateFormat('EEEE, dd MMM yyyy').format(parsedDate)
+                  ?DateFormat('EEEE, dd MMM yyyy').format(parsedDate)
                   : record.date;
 
               return Card(

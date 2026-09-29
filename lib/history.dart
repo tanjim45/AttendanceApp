@@ -42,12 +42,12 @@ class HistoryScreen extends StatelessWidget {
           return ListView.separated(
             padding: const EdgeInsets.all(16),
             itemCount: records.length,
-            separatorBuilder: (_, __) => const SizedBox(height: 8),
+            separatorBuilder: (_, _) => const SizedBox(height: 8),
             itemBuilder: (context, index) {
               final record = records[index];
               final parsedDate = DateTime.tryParse(record.date);
               final displayDate = parsedDate != null
-                  ?DateFormat('EEEE, dd MMM yyyy').format(parsedDate)
+                  ? DateFormat('EEEE, dd MMM yyyy').format(parsedDate)
                   : record.date;
 
               return Card(

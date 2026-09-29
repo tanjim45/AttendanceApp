@@ -7,7 +7,7 @@ class AuthService {
 
   User? get currentUser => _auth.currentUser;
 
-  /// new user registration + firestore save
+  /// new user registration  firestore save
   Future<String?> register({
     required String name,
     required String email,
